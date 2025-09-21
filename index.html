@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowCave</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="glow_cave.jpg">
+</head>
+<body>
+    <header id="Home">
+        <img src="glow_cave.jpg" alt="GlowCave">
+        <h1>GlowCave</h1>
+
+        <!-- Hamburger for mobile -->
+        <div class="hamburger" onclick="toggleNav()">&#x22EE;</div>
+
+        <nav id="mobile-nav">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Lookmaxxing">Lookmaxxing tips</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="Home">
+        <h1>Welcome to GlowCave</h1>
+        <h2>Start your journey here!</h2>
+    </div>
+
+    <section class="hero">
+        <h2>Do you want to achieve facial forward growth?</h2>
+        <p>I am working on a full protocol for achieving dramatic forward growth I call "FDW Method". Follow me on <a href="https://www.instagram.com/_glowcave_org/" target="_blank">Instagram</a> or <a href="https://www.facebook.com/profile.php?id=61578699636186" target="_blank" style="color: blue;">Facebook</a> to stay updated for the "FDW Method".</p>
+        <img src="forwardgrowth-img.png" alt="Forward Growth Image">
+    </section>
+
+    <section class="about" id="About">
+        <h2>About GlowCave</h2>
+        <p>GlowCave is dedicated to helping people improve their facial growth and overall appearance. We focus on scientifically-backed methods, healthy lifestyle tips, and practical exercises to enhance confidence and attractiveness.</p>
+        <p>Our mission is to make forward facial growth accessible for everyone — no gimmicks, just real results. Follow our journey and discover tips, protocols, and guidance to help you unlock your best look.</p>
+    </section>
+
+    <section class="lookmaxxing" id="Lookmaxxing">
+        <h2>Lookmaxxing method from GlowCave</h2>
+        <p>Lookmaxxing methods and protocols are coming soon...</p>
+    </section>
+
+    <section class="contact" id="Contact">
+        <h2>For 1:1 guidance, DM us</h2>
+        <ul class="contact-list">
+            <li>
+                <a href="https://www.instagram.com/_glowcave_org/" target="_blank">
+                    <img src="insta.avif" alt="Instagram" class="contact-icon">
+                    <span>GlowCave</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61578699636186" target="_blank">
+                    <img src="facebook-icon.jpg" alt="Facebook" class="contact-icon">
+                    <span>GlowCave</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 GlowCave. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="https://www.instagram.com/_glowcave_org/" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com/profile.php?id=61578699636186" target="_blank">Facebook</a>
+        </p>
+    </footer>
+
+    <script>
+    function toggleNav() {
+        const nav = document.getElementById('mobile-nav');
+        nav.classList.toggle('active');
+        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : 'auto';
+    }
+    </script>
+</body>
+</html>
